@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 44%;
+  min-height: 480px;
+
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 70px 5px #dbe4eb;
+}
+
+.community-features {
+  min-height: 218px;
+
+  padding: 40px 36px 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+
+  background-color: white;
+}
+
+.community-features h2 {
+  color: hsl(179, 62%, 43%);
+}
+
+.community-features .duration {
+  color: hsl(71, 73%, 54%);
+}
+
+.about-community {
+  height: 100%;
+
+  display: flex;
+  flex-grow: 1;
+}
+
+.duration {
+  letter-spacing: 1.2px;
+  margin: 6px 2px 0;
+}
+
+.community-description {
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+  color: #bcc0cb;
+}
+
+.subscription {
+  width: 24.5%;
+
+  flex-grow: 1;
+
+  background-color: hsl(179, 62%, 43%);
+}
+
+.subscription {
+  padding: 33px 0px 0px 40px;
+  line-height: 37px;
+}
+
+.subscription-price {
+  padding-top: 2px;
+}
+
+.subscription h2 {
+  font-size: 17.3px;
+  line-height: 38px;
+  color: hsl(204, 43%, 93%);
+}
+
+.price {
+  font-size: 33px;
+  padding: 0px 7.5px 0px 0.3px;
+  color: hsl(204, 43%, 93%);
+}
+
+.subscription-price .duration {
+  color: #5fcacc;
+  letter-spacing: -0.2px;
+}
+
+.subscription-feature {
+  letter-spacing: -0.2px;
+  color: hsl(204, 43%, 93%);
+}
+
+.sign-up {
+  width: 237px;
+  height: 47px;
+
+  margin-top: 19px;
+  padding: 0px 3px 2px 0px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 17px;
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(204, 43%, 93%);
+}
+
+.why-us {
+  width: 24.5%;
+
+  background-color: hsl(179, 47%, 52%);
+
+  flex-grow: 1;
+}
+
+.why-us h2 {
+  color: hsl(204, 43%, 93%);
+  font-size: 19px;
+  padding: 41px 0px 15px 37.4px;
+}
+
+.why-us p {
+  color: #92e0e3;
+  font-size: 15.5px;
+  padding: 2px 0px 0px 40px;
+  letter-spacing: -0.8px;
+}
+
+@media screen and (max-width: 1345px) {
+  .container {
+    width: 80%;
+  }
+
+  .about-community {
+    flex-direction: column;
+  }
+
+  .community-features {
+    height: 200px;
+  }
+
+  .subscription {
+    width: 100%;
+  }
+
+  .why-us {
+    width: 100%;
+  }
+}
